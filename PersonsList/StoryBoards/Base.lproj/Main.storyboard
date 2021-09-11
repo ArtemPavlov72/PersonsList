@@ -99,12 +99,12 @@
             </objects>
             <point key="canvasLocation" x="133" y="-173"/>
         </scene>
-        <!--Personal List-->
+        <!--Contacts List-->
         <scene sceneID="v4O-zZ-UEF">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Kb3-XK-zN3" customClass="TabBarViewController" customModule="PersonsList" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Personal List" id="qBg-Ku-bG1"/>
+                    <navigationItem key="navigationItem" title="Contacts List" id="qBg-Ku-bG1"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KbR-Bo-Ijy">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
