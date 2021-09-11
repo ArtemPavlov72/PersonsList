@@ -2,7 +2,7 @@
 //  DataManager.swift
 //  PersonsList
 //
-//  Created by iMac on 08.09.2021.
+//  Created by Artem Pavlov on 08.09.2021.
 //
 
 class DataManager {
