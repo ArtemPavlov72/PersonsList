@@ -17,13 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="bx0-F4-dRP">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="bx0-F4-dRP">
                                 <rect key="frame" x="0.0" y="24.5" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bx0-F4-dRP" id="oxN-Lh-lyf">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="uFh-y5-skb" kind="show" id="VQg-yo-cxM"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -32,19 +35,16 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Contacts list" image="person.circle.fill" catalog="system" id="rGV-a9-Cmn"/>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="k8c-JQ-DoX"/>
-                    <connections>
-                        <segue destination="uFh-y5-skb" kind="show" id="uDC-k4-PjI"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="k8c-JQ-DoX"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9wf-Jx-edP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1662" y="-590"/>
         </scene>
-        <!--View Controller-->
+        <!--Contact Details View Controller-->
         <scene sceneID="v6g-jc-QDw">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="uFh-y5-skb" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="uFh-y5-skb" customClass="ContactDetailsViewController" customModule="PersonsList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mRZ-Wy-bI4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,6 +74,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="42J-D5-aMU"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="3J7-4R-fPS" id="EgA-QN-fRT"/>
+                        <outlet property="phoneLabel" destination="aXS-9d-lmW" id="23M-Yh-9oD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NlH-Q3-qEP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -98,7 +102,7 @@
         <!--Personal List-->
         <scene sceneID="v4O-zZ-UEF">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Kb3-XK-zN3" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Kb3-XK-zN3" customClass="TabBarViewController" customModule="PersonsList" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Personal List" id="qBg-Ku-bG1"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KbR-Bo-Ijy">
