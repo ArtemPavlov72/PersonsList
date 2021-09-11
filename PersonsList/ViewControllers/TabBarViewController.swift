@@ -15,6 +15,10 @@ class TabBarViewController: UITabBarController {
        
     }
     
+    private func setupViewControllers() {
+        let persons = Person.getContactList() //при загрузки TabBarController происходит заполнение экземпляра Person
+        let
+    }
 
 
 }

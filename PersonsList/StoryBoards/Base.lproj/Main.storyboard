@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Contact list View Controller-->
         <scene sceneID="Bhe-9i-VZV">
             <objects>
-                <tableViewController id="e73-Jm-iIb" sceneMemberID="viewController">
+                <tableViewController id="e73-Jm-iIb" userLabel="Contact list View Controller" customClass="ContactListViewController" customModule="PersonsList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="D84-EL-pWA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,7 +117,7 @@
         <!--Contacts info-->
         <scene sceneID="RoS-cu-MHQ">
             <objects>
-                <tableViewController id="ZPa-bZ-zmN" sceneMemberID="viewController">
+                <tableViewController id="ZPa-bZ-zmN" customClass="ContactsInfoTableViewController" customModule="PersonsList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zkx-pJ-WCZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
