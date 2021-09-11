@@ -6,6 +6,9 @@
 //
 
 class DataManager {
+    
+    static let shared = DataManager() // создаем единственный объект класса внутри самого класса и делаем статическим, чтобы на него можно было ссылаться из других частей кода.
+    
     let realNames = [
         "John",
         "Steven",
@@ -16,6 +19,7 @@ class DataManager {
         "Ted",
         "Sharon"
     ]
+    
     let realSecondNames = [
         "Smith",
         "Karter",
@@ -26,6 +30,7 @@ class DataManager {
         "Pitt",
         "Dancher"
     ]
+    
     let realNumbersPhones = [
         "8-900-600-80-80",
         "8-900-555-55-40",
@@ -36,6 +41,7 @@ class DataManager {
         "8-900-220-20-20",
         "8-800-200-33-33"
     ]
+    
     let realEmails = [
         "222@swiftbook.ru",
         "tit@mail.ru",
@@ -46,4 +52,6 @@ class DataManager {
         "cat@swiftbook.ru",
         "works@mail.ru"
     ]
+    
+    private init() {}  // делаем пустой инициализатор, чтобы нельзя было создать лишние объекты класса DataManager
 }
